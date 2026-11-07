@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%2714%27 fill=%27%2302131e%27/%3E%3Ccircle cx=%2732%27 cy=%2732%27 r=%2722%27 fill=%27none%27 stroke=%27%2353d9da%27/%3E%3Cpath d=%27M15 32h34M32 15v34%27 stroke=%27%2353d9da%27/%3E%3Ccircle cx=%2732%27 cy=%2732%27 r=%277%27 fill=%27%23efb956%27/%3E%3C/svg%3E"><meta name="theme-color" content="#02131e">
 <title>回声打捞 · Echo Salvage</title>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v=20261107-layout">
 </head>
 <body>
 <canvas id="sea" aria-label="深海打捞游戏场景"></canvas>
@@ -16,8 +16,8 @@
 <div id="toast" role="status" aria-live="polite"></div>
 <div id="context" class="hidden"></div>
 <section id="intro" class="overlay intro">
-<div class="intro-content"><h1>回声打捞</h1><div class="short-rule"></div><p class="tagline">深海会记住每一次声响。</p><p class="description">声呐照见遗物，也唤醒猎手。<br>带着你的发现，在氧气耗尽前回港。</p><button class="primary" id="start" disabled>正在准备深海…</button><p class="keys"><kbd>WASD</kbd> 移动 <span>/</span> <kbd>SPACE</kbd> 声呐 <span>/</span> <kbd>E</kbd> 诱饵</p><p class="minor">方向键也可移动 · SHIFT 冲刺 · P 暂停<br><span id="record">每次下潜，都是一场贪心与理智的博弈。</span></p></div>
-<div class="intro-notes"><p>—　探测回声，定位遗物</p><p>—　打捞文物，积累回收值</p><p>—　注意氧气，及时返回母港</p></div>
+<div class="intro-content"><h1>回声打捞</h1><div class="short-rule"></div><p class="tagline">深海会记住每一次声响。</p><p class="description">声呐照见遗物，也唤醒猎手。<br>带着你的发现，在氧气耗尽前回港。</p><button class="primary" id="start" disabled>正在准备深海…</button><p class="keys"><kbd>WASD</kbd> 移动 <span>/</span> <kbd>SPACE</kbd> 声呐 <span>/</span> <kbd>E</kbd> 诱饵</p><p class="minor">方向键也可移动 · SHIFT 冲刺 · P 暂停<br><span id="record">每次下潜，都是一场贪心与理智的博弈。</span></p>
+<div class="intro-notes"><p>—　探测回声，定位遗物</p><p>—　打捞文物，积累回收值</p><p>—　注意氧气，及时返回母港</p></div></div>
 </section>
 <div id="gameControls" class="hidden"><div class="bottom-help">靠近自动打捞 <span>·</span> 母港内停留即可撤离<br><small>SHIFT 冲刺（消耗氧气）　P 暂停</small></div><div class="actions"><button id="sonar" class="action"><kbd>SPACE</kbd><strong>释放声呐</strong><span id="sonarStatus">照亮深海，也暴露自己</span></button><button id="lure" class="action secondary"><kbd>E</kbd><strong>声波诱饵 <b id="lureCount">3</b></strong><span>引开猎手 · 限量</span></button></div><div id="homeCompass"><div class="compass"><span>N</span><i id="needle">▲</i><em>母港</em></div><b id="homeDistance">0 m</b></div></div>
 <div id="touchControls" class="hidden"><div id="joystick" aria-label="拖动摇杆移动"><i></i></div><button id="boostTouch" class="touch-boost">冲刺</button></div>

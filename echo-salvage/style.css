@@ -5,3 +5,13 @@ header::before{content:"";position:fixed;z-index:-1;left:0;right:0;top:0;height:
 .action{background:#031823d9;border:1px solid #28545b;border-radius:4px}.action:hover{border-color:#69c4c9}.action span{color:#a1bec4}.action strong{color:#e3eeeb}.action.secondary{border-color:#5d4c72}.action.secondary kbd{color:#d0abef;border-color:#77608b}
 @media(pointer:coarse){.action{min-height:72px;justify-content:center;padding:12px 10px}.action strong{letter-spacing:1px}.action.secondary strong{color:#d9bcf4}.action:not(.secondary) strong{color:#80e7e2}.touch-boost{background:#062932ed}#joystick{background:#062430aa}}
 .manual{margin:20px auto 25px;max-width:460px;border-top:1px solid #234550;border-bottom:1px solid #234550;padding:7px 0;text-align:left}.manual p{font-size:12px;line-height:2.1}.manual b{font-weight:400;color:var(--gold);letter-spacing:3px}.manual+.primary{min-width:200px}@media(max-height:550px){.manual{margin:10px auto;padding:0}.manual p{font-size:10px;line-height:1.65}}
+
+/* Keep the entire opening copy in one flow so footer hints cannot overlap controls. */
+.intro{display:flex;flex-direction:column;align-items:flex-start;overflow-y:auto;overscroll-behavior:contain;padding:145px 4.4% 40px;touch-action:pan-y}
+.intro-content{position:static;top:auto;left:auto;right:auto;flex:0 0 auto;width:min(540px,100%);margin-block:auto}
+.intro-notes{position:static;margin-top:32px}
+@media(max-height:850px){.intro-notes{display:none}}
+@media(max-height:760px){.intro h1{font-size:clamp(38px,5vw,60px);margin-bottom:16px}.intro .short-rule{margin-bottom:14px}.intro .tagline{margin-bottom:10px}.intro .description{margin-bottom:18px}.intro .keys{margin-top:18px}.intro .minor{margin-top:12px}}
+@media(max-width:700px){.intro{padding:clamp(120px,25vh,210px) 7% 32px}.intro-content{margin-block:0}}
+@media(max-height:550px){.intro{padding-top:110px;padding-bottom:20px}.intro-content{margin-block:0}.intro h1{font-size:38px;margin-bottom:10px}.intro .description{margin-bottom:12px}.intro .keys{margin-top:14px}.intro .minor{margin-top:8px}}
+@media(max-width:380px){header{gap:8px}.brand{font-size:20px;letter-spacing:2px}#instruments{flex:1;min-width:60px;width:auto}.salvage{letter-spacing:0}.salvage strong{font-size:18px}.right-head{gap:2px}.icon{min-width:24px;padding:2px}}
