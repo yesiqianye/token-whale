@@ -4,6 +4,7 @@ Token 幸存者 / 小鲸鱼的深海突围
 ## 在线游玩
 
 - [Token 幸存者 · 小鲸鱼的深海突围](https://yesiqianye.github.io/token-whale/)
+- [回声邮局 II · 指令与包裹](https://yesiqianye.github.io/token-whale/echo-post/)
 - [回声打捞 · Echo Salvage](https://yesiqianye.github.io/token-whale/echo-salvage/)
 
 ## 回声打捞
